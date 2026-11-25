@@ -36,14 +36,14 @@ python3 build.py ../posts/AAAA-MM.py /tmp/out --render        # environ 30 s par
 - Regarder une planche d'écrans de 5 posts au hasard (lisibilité, débordements, symboles).
 - Vérifier avec ffprobe que chaque mp4 dure entre 15 et 45 s et contient de l'audio.
 - Copier les mp4 dans `media/AAAA-MM/` (si on regénère une vidéo déjà programmée, lui donner un nouveau nom, par exemple avec le suffixe `_v3`, pour éviter le cache de GitHub), ajouter les sujets à `posts/HISTORY.md`, commit puis push sur `main`.
-- Tester un lien `https://raw.githubusercontent.com/eliottprat-eng/mathsquads-tiktok/main/media/AAAA-MM/<fichier>.mp4` : il doit renvoyer HTTP 200.
+- Après le push, noter le SHA complet du commit (`git rev-parse HEAD`) et utiliser des liens **figés sur ce commit** : `https://raw.githubusercontent.com/eliottprat-eng/mathsquads-tiktok/<SHA>/media/AAAA-MM/<fichier>.mp4`. Les liens en `main/` peuvent rester en 404 quelques minutes à cause du cache. Vérifier qu'un lien renvoie HTTP 200.
 
 ## 4. Programmer dans Metricool
 
 Pour chaque post, appeler `createScheduledPost` avec :
 - `blogId` = l'id de la marque Mathsquads (via `getBrandSettings`) ;
 - `date` = jour J à 18:30 Europe/Paris ;
-- `info` : `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `text` = caption, `media` = [lien raw],
+- `info` : `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `text` = caption, `media` = [lien raw figé sur le SHA],
   `publicationDate: {"dateTime":"AAAA-MM-JJT18:30:00","timezone":"Europe/Paris"}`,
   `tiktokData: {"privacyOption":"PUBLIC_TO_EVERYONE","isAigc":true,"title":<title du post>,"disableComment":false,"disableDuet":false,"disableStitch":false,"commercialContentOwnBrand":false,"commercialContentThirdParty":false,"autoAddMusic":false}`.
 
