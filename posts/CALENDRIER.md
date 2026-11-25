@@ -2,6 +2,12 @@
 
 Rythme : lundi→vendredi à 18 h 30, hors jours fériés / 24, 25 et 31 décembre.
 
+- 2026-11-25 : multiplier-par-11
+- 2026-11-26 : x-carre-egal-9
+- 2026-11-27 : pourcentage-inverse
+- 2026-11-28 : piece-cinq-piles
+- 2026-11-29 : carre-finit-par-5
+- 2026-11-30 : doubler-cote-carre
 - 2026-12-01 : moins3carre
 - 2026-12-02 : identite-remarquable
 - 2026-12-03 : fractions-addition
