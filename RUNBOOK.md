@@ -20,6 +20,7 @@ Règles de contenu :
 - `say` : tout écrit en toutes lettres pour la voix (« moins trois au carré », « math squads point com »). `sub` : la version avec symboles.
 - **Aucun emoji** dans les écrans ni dans `sub` (la police ne les a pas). Les emojis vont seulement dans `caption`.
 - `checks` : au moins une expression sympy vraie par post qui contient un calcul. `build.py` refuse le fichier si une vérification échoue.
+- `title` : titre court TikTok, 60 caractères max. **Obligatoire** : Metricool refuse un post TikTok sans titre.
 - `cta` : alterner A, B et C.
 - **Seules affirmations autorisées sur MathSquads** : 1re heure offerte, remboursé si pas satisfait, cours dès 20 €/h, profs issus des meilleures grandes écoles, collège, lycée et prépa. **Jamais** de chiffres (nombre de cours, % de satisfaction, notes), de promesses de résultats ou de comparaison avec des concurrents.
 
@@ -43,7 +44,7 @@ Pour chaque post, appeler `createScheduledPost` avec :
 - `date` = jour J à 18:30 Europe/Paris ;
 - `info` : `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `text` = caption, `media` = [lien raw],
   `publicationDate: {"dateTime":"AAAA-MM-JJT18:30:00","timezone":"Europe/Paris"}`,
-  `tiktokData: {"privacyOption":"PUBLIC_TO_EVERYONE","isAigc":true,"title":"","disableComment":false,"disableDuet":false,"disableStitch":false,"commercialContentOwnBrand":false,"commercialContentThirdParty":false,"autoAddMusic":false}`.
+  `tiktokData: {"privacyOption":"PUBLIC_TO_EVERYONE","isAigc":true,"title":<title du post>,"disableComment":false,"disableDuet":false,"disableStitch":false,"commercialContentOwnBrand":false,"commercialContentThirdParty":false,"autoAddMusic":false}`.
 
 Ensuite, `getScheduledPosts` sur le mois doit renvoyer exactement un post TikTok par jour. Corriger les manques ou les doublons.
 

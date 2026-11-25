@@ -16,7 +16,7 @@ CD = {"countdown": 3}
 
 POSTS = [
  # 1 — défi -3²
- {"date": "2026-12-01", "name": "moins3carre", "cta": "A", "checks": ["-3**2 == -9", "(-3)**2 == 9"],
+ {"date": "2026-12-01", "name": "moins3carre", "title": "Combien fait −3² ?", "cta": "A", "checks": ["-3**2 == -9", "(-3)**2 == 9"],
   "caption": "Moins trois au carré… t'es sûr de toi ? 😏 Ta réponse en commentaire 👇 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI MATHS · 4e à 2nde"), h("Combien fait…", 100, 10), big("−3²", 340)], "top": 520,
@@ -31,7 +31,7 @@ POSTS = [
     "sub": "Donc −3², ça fait −9. Et pour le carré de −3, il faut des parenthèses : (−3)² = 9."}]},
 
  # 2 — erreur (a+b)²
- {"date": "2026-12-02", "name": "identite-remarquable", "cta": "B", "checks": ["sp.expand((x+3)**2) == x**2+6*x+9"],
+ {"date": "2026-12-02", "name": "identite-remarquable", "title": "(x + 3)² = x² + 9 ? Non !", "cta": "B", "checks": ["sp.expand((x+3)**2) == x**2+6*x+9"],
   "caption": "L'erreur n°1 en calcul littéral 😬 Tu la faisais ? " + TAGS,
   "scenes": [
    {"slide": [pill("ERREUR CLASSIQUE · 3e à 1re"), h("Arrête d'écrire ça :", 96, 60), bad("(x + 3)² = x² + 9", 90)], "top": 500,
@@ -45,7 +45,7 @@ POSTS = [
     "sub": "Donc (x + 3)² = x² + 6x + 9. Le 6x, c'est 2 × x × 3."}]},
 
  # 3 — fractions 1/2 + 1/3
- {"date": "2026-12-03", "name": "fractions-addition", "cta": "A", "checks": ["R(1,2)+R(1,3) == R(5,6)", "R(1,2)+R(1,3) != R(2,5)"],
+ {"date": "2026-12-03", "name": "fractions-addition", "title": "1/2 + 1/3 = 2/5 ?", "cta": "A", "checks": ["R(1,2)+R(1,3) == R(5,6)", "R(1,2)+R(1,3) != R(2,5)"],
   "caption": "1/2 + 1/3 = 2/5 ? 🤔 Réponds avant la fin " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI MATHS · 6e à 4e"), h("Vrai ou faux ?", 100, 40), big("1/2 + 1/3 = 2/5", 160)], "top": 540,
@@ -60,7 +60,7 @@ POSTS = [
     "sub": "3/6 + 2/6 = 5/6. La bonne réponse : 5/6."}]},
 
  # 4 — +20% puis -20%
- {"date": "2026-12-04", "name": "pourcentages-piege", "cta": "C", "checks": ["100*R(12,10)*R(8,10) == 96"],
+ {"date": "2026-12-04", "name": "pourcentages-piege", "title": "+20 % puis −20 % : le piège", "cta": "C", "checks": ["100*R(12,10)*R(8,10) == 96"],
   "caption": "+20 % puis −20 %… tu reviens au prix de départ ? 💸 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 3e à Terminale"), h("Un pull à 100 €", 96, 30), p("augmente de 20 %, puis baisse de 20 %."), h("Il coûte combien ?", 90)], "top": 520,
@@ -75,7 +75,7 @@ POSTS = [
     "sub": "Réponse : 96 €, pas 100 €. La baisse s'applique sur 120 €, pas sur 100 €."}]},
 
  # 5 — Pythagore ou Thalès
- {"date": "2026-12-05", "name": "pythagore-ou-thales", "cta": "B", "checks": [],
+ {"date": "2026-12-05", "name": "pythagore-ou-thales", "title": "Pythagore ou Thalès ?", "cta": "B", "checks": [],
   "caption": "Pythagore ou Thalès ? Le test pour ne plus jamais hésiter 📐 Enregistre-le ! " + TAGS,
   "scenes": [
    {"slide": [pill("MÉTHODE · 4e-3e"), h("Pythagore ou Thalès ?", 100, 40), p("Le test en 2 questions pour ne plus jamais hésiter.")], "top": 560,
@@ -92,7 +92,7 @@ POSTS = [
     "sub": "Angle droit → Pythagore. Parallèles → Thalès. Enregistre la vidéo pour tes révisions."}]},
 
  # 6 — racine d'une somme
- {"date": "2026-12-06", "name": "racine-somme", "cta": "A", "checks": ["sp.sqrt(9+16) == 5", "sp.sqrt(9)+sp.sqrt(16) == 7"],
+ {"date": "2026-12-06", "name": "racine-somme", "title": "√(9 + 16) = 7 ?", "cta": "A", "checks": ["sp.sqrt(9+16) == 5", "sp.sqrt(9)+sp.sqrt(16) == 7"],
   "caption": "√(9 + 16) = 7 ? Le piège des racines 🌱 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 3e à 2nde"), h("Combien fait…", 100, 20), big("√(9 + 16)", 200)], "top": 540,
@@ -106,7 +106,7 @@ POSTS = [
     "sub": "D'abord sous la racine : 9 + 16 = 25. Et √25 = 5."}]},
 
  # 7 — 0,999... = 1
- {"date": "2026-12-07", "name": "zero-virgule-neuf", "cta": "B", "checks": ["3*R(1,3) == 1"],
+ {"date": "2026-12-07", "name": "zero-virgule-neuf", "title": "0,999… = 1 ?", "cta": "B", "checks": ["3*R(1,3) == 1"],
   "caption": "0,999… = 1 ?! Le résultat qui choque tout le monde 🤯 " + TAGS,
   "scenes": [
    {"slide": [pill("VRAI OU FAUX · Lycée"), big("0,999… = 1", 170), p("(avec des 9 à l'infini)")], "top": 560,
@@ -121,7 +121,7 @@ POSTS = [
     "sub": "Or 3/3 = 1. Donc c'est VRAI : 0,999… = 1. Deux écritures du même nombre."}]},
 
  # 8 — second degré
- {"date": "2026-12-08", "name": "second-degre-3-etapes", "cta": "C",
+ {"date": "2026-12-08", "name": "second-degre-3-etapes", "title": "Le second degré en 3 étapes", "cta": "C",
   "checks": ["sp.solve(x**2-5*x+6, x) == [2, 3]", "(-5)**2-4*1*6 == 1"],
   "caption": "Le second degré en 3 étapes, sans stress 📈 Enregistre pour le bac blanc ! " + TAGS,
   "scenes": [
@@ -139,7 +139,7 @@ POSTS = [
     "sub": "Étape 3 : x = (−b ± √Δ) / 2a. (5 − 1)/2 = 2 et (5 + 1)/2 = 3."}]},
 
  # 9 — diviser par 0,5
- {"date": "2026-12-09", "name": "diviser-par-0-5", "cta": "A", "checks": ["10 / R(1,2) == 20"],
+ {"date": "2026-12-09", "name": "diviser-par-0-5", "title": "10 ÷ 0,5 = 5 ?", "cta": "A", "checks": ["10 / R(1,2) == 20"],
   "caption": "10 ÷ 0,5 = 5 ? Presque tout le monde tombe dans le piège 😅 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 6e à 3e"), h("Combien fait…", 100, 20), big("10 ÷ 0,5", 230)], "top": 540,
@@ -153,7 +153,7 @@ POSTS = [
     "sub": "Il y a 20 moitiés dans 10. Réponse : 20, pas 5. Diviser par 0,5 = multiplier par 2."}]},
 
  # 10 — puissances
- {"date": "2026-12-10", "name": "puissances-produit", "cta": "B", "checks": ["2**3 * 2**4 == 2**7", "2**7 == 128"],
+ {"date": "2026-12-10", "name": "puissances-produit", "title": "2³ × 2⁴ = 2¹² ?", "cta": "B", "checks": ["2**3 * 2**4 == 2**7", "2**7 == 128"],
   "caption": "2³ × 2⁴ = 2¹² ? La règle des puissances en 20 secondes ⚡ " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 4e à 2nde"), h("Combien fait…", 100, 20), big("2³ × 2⁴", 240)], "top": 540,
@@ -168,7 +168,7 @@ POSTS = [
     "sub": "2³ = trois « 2 », 2⁴ = quatre « 2 ». En tout sept : 2⁷ = 128. On ADDITIONNE les exposants."}]},
 
  # 11 — dérivée de 1/x
- {"date": "2026-12-11", "name": "derivee-inverse", "cta": "C", "checks": ["sp.diff(1/x, x) == -1/x**2"],
+ {"date": "2026-12-11", "name": "derivee-inverse", "title": "La dérivée de 1/x", "cta": "C", "checks": ["sp.diff(1/x, x) == -1/x**2"],
   "caption": "La dérivée de 1/x, c'est 1 ? 🚫 Le piège du bac " + TAGS_SUP,
   "scenes": [
    {"slide": [pill("DÉFI · 1re-Terminale"), h("Quelle est la dérivée de…", 84, 30), big("f(x) = 1/x", 190)], "top": 520,
@@ -182,7 +182,7 @@ POSTS = [
     "sub": "Donc f'(x) = −1 × x⁻² = −1/x². N'oublie surtout pas le signe moins."}]},
 
  # 12 — calcul mental 15 %
- {"date": "2026-12-12", "name": "calcul-mental-15-pourcent", "cta": "A", "checks": ["R(15,100)*80 == 12"],
+ {"date": "2026-12-12", "name": "calcul-mental-15-pourcent", "title": "15 % de tête en 3 secondes", "cta": "A", "checks": ["R(15,100)*80 == 12"],
   "caption": "Calculer 15 % de tête en 3 secondes 🧠 L'astuce des 10 % " + TAGS,
   "scenes": [
    {"slide": [pill("ASTUCE · 5e à Terminale"), h("15 % de 80 €", 110, 40), p("De tête, en 3 secondes. Voici comment.")], "top": 580,
@@ -199,7 +199,7 @@ POSTS = [
     "sub": "15 % = 10 % + 5 % = 8 + 4 = 12 €. Ça marche avec tous les pourcentages."}]},
 
  # 13 — révisions vacances
- {"date": "2026-12-13", "name": "reviser-vacances-noel", "cta": "C", "checks": [],
+ {"date": "2026-12-13", "name": "reviser-vacances-noel", "title": "Réviser les maths pendant les vacances", "cta": "C", "checks": [],
   "caption": "Vacances de Noël : comment réviser les maths sans y passer tes journées 🎄 " + TAGS,
   "scenes": [
    {"slide": [pill("MÉTHODE · Collège & Lycée"), h("Réviser les maths pendant les vacances", 88, 40), p("3 règles simples pour arriver serein au bac blanc ou au brevet blanc.")], "top": 520,
@@ -216,7 +216,7 @@ POSTS = [
     "sub": "Règle 3 : commence par le chapitre que tu évites. C'est lui qui te fera gagner le plus de points."}]},
 
  # 14 — probabilités deux pièces
- {"date": "2026-12-14", "name": "proba-deux-pieces", "cta": "B", "checks": ["1 - R(1,2)**2 == R(3,4)"],
+ {"date": "2026-12-14", "name": "proba-deux-pieces", "title": "2 pièces : au moins un pile ?", "cta": "B", "checks": ["1 - R(1,2)**2 == R(3,4)"],
   "caption": "On lance 2 pièces : quelle chance d'avoir au moins un pile ? 🪙 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 3e à 1re"), h("On lance 2 pièces.", 96, 30), h("Probabilité d'avoir au moins un PILE ?", 80)], "top": 540,
@@ -231,7 +231,7 @@ POSTS = [
     "sub": "Seul FF n'a aucun pile. Donc 3 cas sur 4 : P = 3/4."}]},
 
  # 15 — priorités 2 + 2 × 2
- {"date": "2026-12-15", "name": "priorites-operatoires", "cta": "A", "checks": ["2 + 2*2 == 6"],
+ {"date": "2026-12-15", "name": "priorites-operatoires", "title": "2 + 2 × 2 = 8 ?", "cta": "A", "checks": ["2 + 2*2 == 6"],
   "caption": "2 + 2 × 2 = 8 ? 🙃 Les priorités, c'est pas une option " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 6e à 4e"), h("Combien fait…", 100, 20), big("2 + 2 × 2", 220)], "top": 540,
@@ -245,7 +245,7 @@ POSTS = [
     "sub": "Puis 2 + 4 = 6. Et pas 8 ! Pour 8, il aurait fallu des parenthèses : (2 + 2) × 2."}]},
 
  # 16 — signe moins devant parenthèse
- {"date": "2026-12-16", "name": "moins-devant-parenthese", "cta": "C", "checks": ["sp.expand(-(x-3)) == -x+3"],
+ {"date": "2026-12-16", "name": "moins-devant-parenthese", "title": "Le moins devant une parenthèse", "cta": "C", "checks": ["sp.expand(-(x-3)) == -x+3"],
   "caption": "Le signe moins devant une parenthèse : l'erreur qui coûte cher ⚠️ " + TAGS,
   "scenes": [
    {"slide": [pill("ERREUR CLASSIQUE · 4e à 2nde"), h("Développe :", 96, 30), big("−(x − 3)", 220)], "top": 540,
@@ -258,7 +258,7 @@ POSTS = [
     "sub": "La règle : un moins devant la parenthèse change TOUS les signes. Donc −x + 3."}]},
 
  # 17 — limite (1+1/n)^n
- {"date": "2026-12-17", "name": "limite-e", "cta": "B", "checks": ["sp.limit((1+1/n)**n, n, sp.oo) == sp.E"],
+ {"date": "2026-12-17", "name": "limite-e", "title": "(1 + 1/n)ⁿ tend vers 1 ?", "cta": "B", "checks": ["sp.limit((1+1/n)**n, n, sp.oo) == sp.E"],
   "caption": "(1 + 1/n)ⁿ tend vers 1 ? Le piège préféré des profs de prépa 🎓 " + TAGS_SUP,
   "scenes": [
    {"slide": [pill("DÉFI · Terminale & Prépa"), h("Quand n → +∞…", 90, 30), big("(1 + 1/n)ⁿ", 200), h("tend vers ?", 84)], "top": 480,
@@ -273,7 +273,7 @@ POSTS = [
     "sub": "On passe à l'exponentielle : n·ln(1 + 1/n) → 1. Donc la limite est e ≈ 2,718."}]},
 
  # 18 — moyenne coefficientée
- {"date": "2026-12-18", "name": "moyenne-coefficients", "cta": "A", "checks": ["(8*1 + 14*2) / R(3) == 12"],
+ {"date": "2026-12-18", "name": "moyenne-coefficients", "title": "Ta moyenne avec coefficients", "cta": "A", "checks": ["(8*1 + 14*2) / R(3) == 12"],
   "caption": "Ta vraie moyenne avec les coefficients 📊 (ce n'est pas 11) " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 5e à Terminale"), card("8/20  coef 1", 84), card("14/20  coef 2", 84), h("Ta moyenne ?", 90)], "top": 480,
@@ -288,7 +288,7 @@ POSTS = [
     "sub": "8 + 28 = 36, et 36 ÷ 3 = 12/20. Le 14 compte double, il tire la moyenne vers le haut."}]},
 
  # 19 — vitesse moyenne
- {"date": "2026-12-19", "name": "vitesse-moyenne", "cta": "C", "checks": ["R(2*60*40, 60+40) == 48"],
+ {"date": "2026-12-19", "name": "vitesse-moyenne", "title": "60 km/h puis 40 km/h : moyenne 50 ?", "cta": "C", "checks": ["R(2*60*40, 60+40) == 48"],
   "caption": "Aller à 60 km/h, retour à 40 km/h : moyenne 50 ? 🚗 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 4e à Terminale"), h("Aller : 60 km/h", 90, 20), h("Retour : 40 km/h", 90, 40), h("Vitesse moyenne ?", 84)], "top": 520,
@@ -303,7 +303,7 @@ POSTS = [
     "sub": "240 km en 5 h = 48 km/h. Moins que 50, car on passe plus de temps à rouler lentement."}]},
 
  # 20 — équation 1er degré
- {"date": "2026-12-20", "name": "equation-premier-degre", "cta": "A", "checks": ["sp.solve(3*x+5-20, x) == [5]"],
+ {"date": "2026-12-20", "name": "equation-premier-degre", "title": "Résoudre une équation en 2 étapes", "cta": "A", "checks": ["sp.solve(3*x+5-20, x) == [5]"],
   "caption": "Résoudre une équation en 2 étapes, même si t'es nul en maths ✌️ " + TAGS,
   "scenes": [
    {"slide": [pill("MÉTHODE · 5e à 3e"), h("Résoudre", 96, 10), big("3x + 5 = 20", 180)], "top": 560,
@@ -316,7 +316,7 @@ POSTS = [
     "sub": "Étape 2 : on divise par 3. x = 5. Vérif : 3 × 5 + 5 = 20"}]},
 
  # 21 — f(-2) avec x²
- {"date": "2026-12-21", "name": "image-fonction-carre", "cta": "B", "checks": ["(lambda v: v**2)(-2) == 4"],
+ {"date": "2026-12-21", "name": "image-fonction-carre", "title": "f(x) = x², f(−2) = ?", "cta": "B", "checks": ["(lambda v: v**2)(-2) == 4"],
   "caption": "f(x) = x², combien vaut f(−2) ? Le piège des parenthèses 🔁 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 3e à 2nde"), big("f(x) = x²", 200), h("Combien vaut f(−2) ?", 86)], "top": 520,
@@ -330,7 +330,7 @@ POSTS = [
     "sub": "(−2) × (−2) = 4. Sans les parenthèses, tu aurais trouvé −4 : faux !"}]},
 
  # 22 — 10^-3
- {"date": "2026-12-22", "name": "puissance-negative-10", "cta": "C", "checks": ["R(10)**-3 == R(1,1000)"],
+ {"date": "2026-12-22", "name": "puissance-negative-10", "title": "10⁻³ est négatif ?", "cta": "C", "checks": ["R(10)**-3 == R(1,1000)"],
   "caption": "10⁻³, c'est un nombre négatif ? ❄️ " + TAGS,
   "scenes": [
    {"slide": [pill("VRAI OU FAUX · 4e-3e"), big("10⁻³ < 0", 220), p("10 puissance −3 est un nombre négatif ?")], "top": 540,
@@ -345,7 +345,7 @@ POSTS = [
     "sub": "Donc 1/1000 = 0,001. Positif, juste très petit."}]},
 
  # 23 — a^0 = 1
- {"date": "2026-12-23", "name": "puissance-zero", "cta": "A", "checks": ["R(2**3, 2**3) == 2**0 == 1"],
+ {"date": "2026-12-23", "name": "puissance-zero", "title": "Pourquoi 2⁰ = 1 ?", "cta": "A", "checks": ["R(2**3, 2**3) == 2**0 == 1"],
   "caption": "Pourquoi n'importe quel nombre puissance 0 vaut 1 ? 🤔 La preuve en 20 s " + TAGS,
   "scenes": [
    {"slide": [pill("LE SAVAIS-TU ? · 4e à 2nde"), big("2⁰ = 1", 240), h("Mais pourquoi ?", 86)], "top": 520,
@@ -359,7 +359,7 @@ POSTS = [
     "sub": "Avec les règles : 2³ ÷ 2³ = 2³⁻³ = 2⁰. Conclusion : 2⁰ = 1."}]},
 
  # 24 — simplification fraction
- {"date": "2026-12-24", "name": "simplifier-fraction-piege", "cta": "B", "checks": ["R(2+6, 2) == 4"],
+ {"date": "2026-12-24", "name": "simplifier-fraction-piege", "title": "(2 + x)/2 = x ? Non !", "cta": "B", "checks": ["R(2+6, 2) == 4"],
   "caption": "Simplifier (2 + x)/2 = x ? Non !! ✂️ " + TAGS,
   "scenes": [
    {"slide": [pill("ERREUR CLASSIQUE · 3e à 1re"), h("Peut-on simplifier ?", 90, 40), bad("(2 + x) / 2 = x", 100)], "top": 540,
@@ -373,7 +373,7 @@ POSTS = [
     "sub": "La règle : on simplifie des FACTEURS, jamais des termes d'une somme. Ici : 1 + x/2."}]},
 
  # 25 — Gauss 1 à 100
- {"date": "2026-12-25", "name": "somme-gauss", "cta": "C", "checks": ["sum(range(1, 101)) == 5050", "50*101 == 5050"],
+ {"date": "2026-12-25", "name": "somme-gauss", "title": "1 + 2 + … + 100 en 10 secondes", "cta": "C", "checks": ["sum(range(1, 101)) == 5050", "50*101 == 5050"],
   "caption": "1 + 2 + 3 + … + 100 en 10 secondes, l'astuce de Gauss à 9 ans 🎁 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · Tous niveaux"), big("1 + 2 + … + 100", 140), h("En 10 secondes ?", 86)], "top": 540,
@@ -387,7 +387,7 @@ POSTS = [
     "sub": "50 paires × 101 = 5050. Joyeux Noël !"}]},
 
  # 26 — angles triangle
- {"date": "2026-12-26", "name": "angles-triangle", "cta": "A", "checks": ["180 - 50 - 60 == 70"],
+ {"date": "2026-12-26", "name": "angles-triangle", "title": "Le 3e angle du triangle", "cta": "A", "checks": ["180 - 50 - 60 == 70"],
   "caption": "Le 3e angle du triangle en 5 secondes 📐 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · 6e à 4e"), h("Un triangle a deux angles :", 84, 30), card("50°  et  60°", 110), h("Le troisième ?", 86)], "top": 500,
@@ -402,7 +402,7 @@ POSTS = [
     "sub": "Donc 180 − 50 − 60 = 70°."}]},
 
  # 27 — racine de x²
- {"date": "2026-12-27", "name": "racine-de-x-carre", "cta": "B", "checks": ["sp.sqrt((-3)**2) == 3", "sp.sqrt(x**2) != x"],
+ {"date": "2026-12-27", "name": "racine-de-x-carre", "title": "√(x²) = x ? Pas toujours", "cta": "B", "checks": ["sp.sqrt((-3)**2) == 3", "sp.sqrt(x**2) != x"],
   "caption": "√(x²) = x ? Pas toujours ! Le piège de la valeur absolue 🔍 " + TAGS_SUP,
   "scenes": [
    {"slide": [pill("VRAI OU FAUX · 2nde à Terminale"), big("√(x²) = x", 210), p("pour tout nombre réel x ?")], "top": 540,
@@ -417,7 +417,7 @@ POSTS = [
     "sub": "La bonne formule : √(x²) = |x|. Une racine carrée est toujours positive."}]},
 
  # 28 — feuille pliée
- {"date": "2026-12-28", "name": "feuille-pliee-10-fois", "cta": "C", "checks": ["2**10 == 1024"],
+ {"date": "2026-12-28", "name": "feuille-pliee-10-fois", "title": "Une feuille pliée 10 fois", "cta": "C", "checks": ["2**10 == 1024"],
   "caption": "Tu plies une feuille 10 fois : combien d'épaisseurs ? 📄 " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI · Tous niveaux"), h("Tu plies une feuille en deux…", 84, 30), big("10 fois", 220), h("Combien d'épaisseurs ?", 80)], "top": 480,
@@ -432,7 +432,7 @@ POSTS = [
     "sub": "Après 10 plis : 2¹⁰ = 1024 épaisseurs ! La puissance des suites géométriques."}]},
 
  # 29 — inéquation signe
- {"date": "2026-12-29", "name": "inequation-sens", "cta": "A", "checks": ["sp.solveset(-2*x > 6, x, sp.S.Reals) == sp.Interval.open(-sp.oo, -3)"],
+ {"date": "2026-12-29", "name": "inequation-sens", "title": "−2x > 6 : le piège du signe", "cta": "A", "checks": ["sp.solveset(-2*x > 6, x, sp.S.Reals) == sp.Interval.open(-sp.oo, -3)"],
   "caption": "−2x > 6 donc x > −3 ? 🚨 La règle que tout le monde oublie " + TAGS,
   "scenes": [
    {"slide": [pill("ERREUR CLASSIQUE · 3e à 2nde"), h("Résous :", 96, 20), big("−2x > 6", 220)], "top": 540,
@@ -445,7 +445,7 @@ POSTS = [
     "sub": "La règle : × ou ÷ par un NÉGATIF → on inverse le sens. Donc x < −3."}]},
 
  # 30 — 2027 premier
- {"date": "2026-12-30", "name": "2027-nombre-premier", "cta": "B", "checks": ["sp.isprime(2027)", "sp.sqrt(2027) < 46"],
+ {"date": "2026-12-30", "name": "2027-nombre-premier", "title": "2027 est-il premier ?", "cta": "B", "checks": ["sp.isprime(2027)", "sp.sqrt(2027) < 46"],
   "caption": "2027 est-il un nombre premier ? 🎆 Le défi de la nouvelle année " + TAGS,
   "scenes": [
    {"slide": [pill("DÉFI DE NOUVEL AN"), big("2027", 300), h("est-il un nombre premier ?", 80)], "top": 520,
