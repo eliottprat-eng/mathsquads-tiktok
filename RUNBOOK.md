@@ -1,6 +1,10 @@
 # Procédure mensuelle (lue par la tâche programmée Claude, le 25 de chaque mois)
 
-Objectif : produire et programmer **1 vidéo TikTok par jour pour tout le mois suivant**, sans intervention humaine.
+Objectif : que le mois suivant compte **exactement 20 vidéos TikTok programmées**, sans intervention humaine.
+
+⚠️ L'offre gratuite de Metricool ne publie que **20 publications par mois civil** (au-delà, rien n'est publié). D'où la règle :
+- Rythme : **du lundi au vendredi à 18 h 30**, hors jours fériés français et hors 24, 25 et 31 décembre. Si le mois compte plus de 20 jours ouvrés, on prend les 20 premiers. S'il en compte moins, on complète avec des samedis.
+- Avant de générer quoi que ce soit : `getScheduledPosts` sur le mois cible. **N = 20 − nombre de posts TikTok déjà programmés.** Si N ≤ 0, s'arrêter sans rien faire. Sinon, ne produire que N vidéos, sur les jours ouvrés encore libres (des vidéos ont pu être avancées ou reportées d'un mois à l'autre, voir `posts/CALENDRIER.md`).
 
 ## 1. Préparer
 
@@ -10,7 +14,7 @@ Objectif : produire et programmer **1 vidéo TikTok par jour pour tout le mois s
 
 ## 2. Écrire `posts/AAAA-MM.py`
 
-Copier la structure de `posts/2026-12.py` : mêmes helpers, une entrée par jour, `date` = chaque jour du mois.
+Copier la structure de `posts/2026-12.py` : mêmes helpers, une entrée par vidéo, `date` = son jour de publication (jours ouvrés libres, voir plus haut).
 
 Règles de contenu :
 - **Mélange sur le mois** : environ 40 % de défis (avec `CD`, le compte à rebours), 25 % d'erreurs classiques, 20 % de méthodes ou astuces, 15 % de « vrai ou faux » ou « le savais-tu ».
@@ -42,12 +46,12 @@ python3 build.py ../posts/AAAA-MM.py /tmp/out --render        # environ 30 s par
 
 Pour chaque post, appeler `createScheduledPost` avec :
 - `blogId` = l'id de la marque Mathsquads (via `getBrandSettings`) ;
-- `date` = jour J à 18:30 Europe/Paris ;
+- `date` = jour de publication à 18:30 Europe/Paris ;
 - `info` : `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `text` = caption, `media` = [lien raw figé sur le SHA],
   `publicationDate: {"dateTime":"AAAA-MM-JJT18:30:00","timezone":"Europe/Paris"}`,
   `tiktokData: {"privacyOption":"PUBLIC_TO_EVERYONE","isAigc":true,"title":<title du post>,"disableComment":false,"disableDuet":false,"disableStitch":false,"commercialContentOwnBrand":false,"commercialContentThirdParty":false,"autoAddMusic":false}`.
 
-Ensuite, `getScheduledPosts` sur le mois doit renvoyer exactement un post TikTok par jour. Corriger les manques ou les doublons.
+Ensuite, `getScheduledPosts` sur le mois doit renvoyer exactement 20 posts TikTok, au plus 1 par jour. Corriger les manques ou les doublons, puis compléter `posts/CALENDRIER.md`.
 
 ## 5. Prévenir
 

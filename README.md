@@ -1,13 +1,13 @@
 # MathSquads × TikTok
 
-Le contenu TikTok de **@mathsquads.fr** est généré et programmé automatiquement : 1 vidéo par jour, avec voix off, sous-titres et une promo de mathsquads.com à la fin.
+Le contenu TikTok de **@mathsquads.fr** est généré et programmé automatiquement : 20 vidéos par mois (du lundi au vendredi, limite de l'offre gratuite de Metricool), avec voix off, sous-titres et une promo de mathsquads.com à la fin.
 
 ## Comment ça marche
 
 1. `posts/AAAA-MM.py` : les 30 scripts du mois (texte lu, sous-titres, écrans, vérifications mathématiques).
 2. `engine/build.py` vérifie chaque calcul avec sympy, puis génère les vidéos : écrans avec `render.py`, voix Kokoro, musique et bruitages avec `audio.py`, montage image par image (transitions, zoom, sous-titres animés) avec `video.py`.
 3. `media/AAAA-MM/` : les vidéos finales. GitHub les sert à un lien public, que Metricool télécharge.
-4. Les posts sont programmés dans Metricool (marque « Mathsquads », réseau TikTok) à 18 h 30, heure de Paris.
+4. Les posts sont programmés dans Metricool (marque « Mathsquads », réseau TikTok) à 18 h 30, heure de Paris. Le calendrier réel est dans `posts/CALENDRIER.md`.
 5. Une tâche programmée Claude refait tout ça le 25 de chaque mois pour le mois suivant (voir `RUNBOOK.md`).
 
 ## Générer à la main
