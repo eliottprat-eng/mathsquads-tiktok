@@ -1,5 +1,13 @@
 # Sujets déjà publiés (ne pas réutiliser)
 
+## 2026-11
+- 2026-11-25 · multiplier-par-11 — Multiplier par 11 de tête en 2 secondes 🤯 Teste avec ton âge !
+- 2026-11-26 · x-carre-egal-9 — x² = 9 donc x = 3 ? Il manque une solution 👀
+- 2026-11-27 · pourcentage-inverse — 8 % de 50 ? L'astuce que personne ne t'a apprise à l'école 🔄
+- 2026-11-28 · piece-cinq-piles — 5 piles d'affilée : face a plus de chances au prochain lancer ? 🪙
+- 2026-11-29 · carre-finit-par-5 — 35² de tête en 3 secondes 😎 L'astuce des nombres qui finissent par 5
+- 2026-11-30 · doubler-cote-carre — Tu doubles le côté d'un carré : l'aire double ? 📏
+
 ## 2026-12
 - 2026-12-01 · moins3carre — Moins trois au carré… t'es sûr de toi ? 😏 Ta réponse en commentaire 👇
 - 2026-12-02 · identite-remarquable — L'erreur n°1 en calcul littéral 😬 Tu la faisais ?

@@ -5,7 +5,7 @@ set -euo pipefail
 A="${MSQ_ASSETS:-$HOME/msq-assets}"
 mkdir -p "$A/fonts" "$A/voices"
 
-pip install --break-system-packages -q kokoro-onnx soundfile pillow sympy fonttools
+pip install --break-system-packages -q kokoro-onnx soundfile pillow sympy fonttools scipy numpy
 
 cd "$A/fonts"
 if [ ! -f package/files/poppins-latin-800-normal.woff ]; then

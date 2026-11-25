@@ -53,7 +53,8 @@ def to_spec(post):
         scenes.append({"slide": len(slides) - 1, "say": sc["say"], "sub": sc.get("sub", sc["say"])})
     cta_slide, say, sub = CTA[post.get("cta", "A")]
     slides.append(cta_slide); scenes.append({"slide": len(slides) - 1, "say": say, "sub": sub})
-    return {"name": post["name"], "caption": post["caption"], "slides": slides, "scenes": scenes}
+    music = int(post["date"][-2:]) % 3  # les 3 musiques tournent jour après jour
+    return {"name": post["name"], "caption": post["caption"], "slides": slides, "scenes": scenes, "music": music}
 
 
 if __name__ == "__main__":
